@@ -47,7 +47,7 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-  background: url('/img/dog_splash2.jpg');
+  background: url('../img/dog_splash2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
