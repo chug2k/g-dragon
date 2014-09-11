@@ -55,7 +55,7 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading">Dog Sitters On Demand</h1>
+            <h1 class="cover-heading" id="tagline">Valet Parking for Your Dog</h1>
             <p class="lead">A trusted dog-sitter will come pick up your best friend on a moment's notice, for thirty minutes to eight hours.</p>
             <p class="lead">
               <a href="iphone_juke.html">
@@ -78,6 +78,19 @@
       </div>
 
     </div>
+    <script type="text/javascript">
+
+
+      if(location.search.indexOf('dbbth') != -1) {
+        var altTagline = 'Dog boarding by the hour';
+        document.getElementById('tagline').innerHTML = altTagline;
+      }
+
+
+
+
+    </script>
   </body>
+
 </html>
 
