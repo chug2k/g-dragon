@@ -33,6 +33,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -64,8 +65,10 @@ body {
 }
 
 .cover-heading {
-    font-family: 'Oleo Script', cursive;
     font-size: 80px;
+}
+.cover-info {
+
 }
 
 /* Padding for spacing */
@@ -81,10 +84,9 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Oleo Script', cursive;
-  font-size: 48px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 56px;
   float: left;
-  color: orange;
 }
 
 .masthead-nav > li {
@@ -121,11 +123,10 @@ body {
     padding-top: 0;
   }
   .cover-heading {
-    font-family: 'Oleo Script', cursive;
     font-size: 48px;
   }
   .masthead-brand {
-    font-size: 32px;
+    font-size: 30px;
   }
   .site-wrapper-inner img {
      max-width: 100px;
@@ -144,6 +145,29 @@ body {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+}
+.info-text {
+  font-weight: 300;
+}
+.price {
+  font-size:60px;
+}
+.pitch {
+  font-size: 40px;
+}
+.req-fetch-button {
+  font-weight: 300;
+  font-size: 20px;
+}
+img.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+}
+.section {
+    margin-bottom: 30px;
 }
 
 
@@ -180,6 +204,25 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .info-text {
+    font-weight: 300;
+  }
+  .price {
+    font-size:92px;
+  }
+  .pitch {
+    font-size: 60px;
+  }
+  .req-fetch-button {
+    font-size: 24px;
+  }
+  img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
   }
 }
 
