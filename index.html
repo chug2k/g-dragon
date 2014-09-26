@@ -42,40 +42,57 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
           <div class="masthead clearfix hidden-xs">
             <div class="inner">
               <h3 class="masthead-brand">FETCH</h3>
-              <!--<ul class="nav masthead-nav">-->
+              <ul class="nav masthead-nav">
                 <!--<li class="active"><a href="#">Home</a></li>-->
-                <!--<li><a href="#">Features</a></li>-->
-                <!--<li><a href="#">Contact</a></li>-->
-              <!--</ul>-->
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
             </div>
           </div>
 
           <div class="inner cover">
             <div class="section">
-              <h1 class="pitch" id="tagline">Give your dog a break</h1>
-              <h2 class="info-text">15-minute dog walks anytime, anywhere in SF</h2>
+              <h1 class="pitch" id="tagline">On-Demand Dog Walkers</h1>
+              <!--<h2 class="info-text">Anytime, anywhere in SF</h2>-->
             </div>
 
             <div class="section">
-              <h1 class="price">$15</h1>
-              <h5 class="info-text" style="font-size:24px">key pickup/dropoff included</h5>
+              <h1 class="price">$15/hr.</h1>
+              <h5 class="info-text" style="font-size:24px">(super special product hunt rate)</h5>
             </div>
 
 
-            <div class="section">
+            <div class="section hidden-xs">
               <a href="tel://6502753385"><h1>650.275.3385</h1></a>
-                <a href="mailto:chug2k@gmail.com?subject=FETCH - NEED A FETCH NOW"><button type="submit" class="btn btn-warning req-fetch-button">REQUEST A <span style="font-weight:normal;">FETCH</span></button></a>
+                <a href="https://app.purechat.com/w/tryfetchapp">
+                  <button class="btn btn-warning req-fetch-button">REQUEST A <span style="font-weight:normal;">FETCH</span> NOW</button>
+                </a>
+                <h2>
+                  <a href="mailto:woof@tryfetchapp.com">woof@tryfetchapp.com</a>
+                </h2>
+            </div>
+            <div class="section visible-xs">
+              <a href="tel://6502753385"><h1>650.275.3385</h1></a>
+              <a href="https://app.purechat.com/w/tryfetchapp">
+                <button id='fetch-now-btn-mobile' class="btn btn-warning req-fetch-button">REQUEST A <span style="font-weight:normal;">FETCH</span> NOW</button>
+              </a>
+              <h2>
+                <a href="mailto:woof@tryfetchapp.com">woof@tryfetchapp.com</a>
+              </h2>
             </div>
 
+
+
             <div class="section">
-              <img class="profile" src="img/charles_prof.png" />
-              <img class="profile" src="img/chris_prof.png" />
-              <br/>
-              Cofounders Chuck, Chris, and Rolo
+              <a href="about_us.html">
+                <img class="profile" src="img/charles_prof.png" />
+                <img class="profile" src="img/chris_prof.png" />
+                <br/>
+                Cofounders Chuck, Chris, and Rolo
+              </a>
             </div>
             <!--
             <p class="lead">
@@ -92,6 +109,10 @@
 
           <div class="mastfoot">
             <div class="inner">
+              <div class="visible-xs">
+                <a href="about.html">About Us</a> &nbsp;&nbsp;
+                <a href="faq.html">FAQ</a>
+              </div>
               <p>&copy; 2014 Fetch</p>
             </div>
           </div>
@@ -101,15 +122,16 @@
       </div>
 
     </div>
+
+    <script type="text/javascript" src="zepto.min.js"></script>
     <script type="text/javascript">
-
-
-      if(location.search.indexOf('dbbth') != -1) {
-        var altTagline = 'Dog boarding by the hour';
-        document.getElementById('tagline').innerHTML = altTagline;
-      }
-
+      $(document).on('click', '#fetch-now-btn-mobile', function(e) {
+        e.preventDefault();
+        $('.purechat-button-expand').click();
+      });
     </script>
+    <script type='text/javascript'>	(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'd27b6db9-44fc-4bec-a371-5844dae471fb', f: true });	done = true;	}	};	})();	</script>
+
   </body>
 
 </html>

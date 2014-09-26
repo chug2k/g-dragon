@@ -90,8 +90,14 @@ body {
   color: orange;
 }
 
+.masthead-nav {
+    float: right;
+}
+
 .masthead-nav > li {
   display: inline-block;
+  padding-top: 15px;
+
 }
 .masthead-nav > li + li {
   margin-left: 20px;
@@ -99,8 +105,8 @@ body {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 300;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
