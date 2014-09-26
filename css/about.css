@@ -176,7 +176,25 @@ img.profile {
 .section {
     margin-bottom: 30px;
 }
+.profile-container {
+    text-align: left;
+}
+.profile-name {
+    font-weight: 300;
+    font-size: 35px;
+}
+.profile-social {
+    margin-bottom: 10px;
+}
+.profile-img {
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
 
+.well-lg {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
 
 /*
  * Footer
@@ -230,6 +248,10 @@ img.profile {
         border-radius: 60px;
         -webkit-border-radius: 60px;
         -moz-border-radius: 60px;
+    }
+
+    .profile-container {
+        width:800px;
     }
 }
 
