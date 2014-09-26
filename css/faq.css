@@ -52,7 +52,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding-top: 10%;
 
 }
 
@@ -195,7 +194,7 @@ img.profile {
 @media (min-width: 768px) {
     /* Pull out the header and footer */
     .masthead {
-        position: fixed;
+
         top: 0;
     }
     .mastfoot {
@@ -233,10 +232,21 @@ img.profile {
     }
 }
 
-/*@media (min-width: 992px) {*/
-/*.masthead,*/
-/*.mastfoot,*/
-/*.cover-container {*/
-/*width: 700px;*/
-/*}*/
-/*}*/
+.well {
+    background-color: rgba(120, 120, 120, 0.6);
+    text-align: left;
+}
+
+p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.orange {
+    color: orange;
+}
+
+a {
+    text-decoration: underline;
+    weight: bold;
+}
