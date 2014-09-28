@@ -198,10 +198,10 @@ img.profile {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
+  /*.mastfoot {*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+  /*}*/
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
