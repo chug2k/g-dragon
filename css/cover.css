@@ -71,6 +71,15 @@ body {
 
 }
 
+.form-control {
+    font-weight: 300;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 300px;
+    margin: auto;
+}
+
 /* Padding for spacing */
 .inner {
   padding: 30px;
