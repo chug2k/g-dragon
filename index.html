@@ -67,21 +67,51 @@
 
             <div class="section hidden-xs">
               <a href="tel://6502753385"><h1>650.275.3385</h1></a>
-                <a href="https://app.purechat.com/w/tryfetchapp">
-                  <button class="btn btn-warning req-fetch-button">REQUEST A <span style="font-weight:normal;">FETCH</span> NOW</button>
-                </a>
-                <h2>
-                  <a href="mailto:woof@tryfetchapp.com">woof@tryfetchapp.com</a>
-                </h2>
+              <a href="https://app.purechat.com/w/tryfetchapp">
+                <button class="btn btn-warning req-fetch-button">REQUEST A <span
+                    style="font-weight:normal;">FETCH</span> NOW
+                </button>
+              </a>
+
+              <h4 style="font-weight: 300; margin-top:30px;">
+                or signup to schedule your next walk
+              </h4>
+
+              <form role="form" method="post" action="http://api.reactr.tv/v1/subscribe/doggy">
+                <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+                <br/>
+                <input class="form-control" name="zip" type="text" placeholder="Zipcode (optional)" pattern="\d*">
+                <input type="hidden" name="platform" value="ios"/>
+                <br/>
+                <button class="btn btn-default sign-up-button" type="submit">SIGN UP</button>
+              </form>
+
+              <h3>
+                <a href="mailto:woof@tryfetchapp.com">woof@tryfetchapp.com</a>
+              </h3>
             </div>
             <div class="section visible-xs">
               <a href="tel://6502753385"><h1>650.275.3385</h1></a>
               <a href="https://app.purechat.com/w/tryfetchapp">
                 <button id='fetch-now-btn-mobile' class="btn btn-warning req-fetch-button">REQUEST A <span style="font-weight:normal;">FETCH</span> NOW</button>
               </a>
-              <h2>
+
+              <h4 style="font-weight: 300; margin-top:30px;">
+                or signup to schedule your next walk
+              </h4>
+
+              <form role="form" method="post" action="http://api.reactr.tv/v1/subscribe/doggy">
+                <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+                <br/>
+                <input class="form-control" name="zip" type="text" placeholder="Zipcode (optional)" pattern="\d*">
+                <input type="hidden" name="platform" value="ios"/>
+                <br/>
+                <button class="btn btn-default sign-up-button" type="submit">SIGN UP</button>
+              </form>
+
+              <h3>
                 <a href="mailto:woof@tryfetchapp.com">woof@tryfetchapp.com</a>
-              </h2>
+              </h3>
             </div>
 
 
@@ -132,6 +162,26 @@
     </script>
     <script type='text/javascript'>	(function () { var done = false;	var script = document.createElement('script');	script.async = true;	script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) {	if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {	var w = new PCWidget({ c: 'd27b6db9-44fc-4bec-a371-5844dae471fb', f: true });	done = true;	}	};	})();	</script>
 
+    <script type="text/javascript">
+      adroll_adv_id = "WI4NJUTFTBAMRPV7SHWBGL";
+      adroll_pix_id = "LGDRDHV2ENH5VB4TJ45OTA";
+      (function () {
+        var oldonload = window.onload;
+        window.onload = function () {
+          __adroll_loaded = true;
+          var scr = document.createElement("script");
+          var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+          scr.setAttribute('async', 'true');
+          scr.type = "text/javascript";
+          scr.src = host + "/j/roundtrip.js";
+          ((document.getElementsByTagName('head') || [null])[0] ||
+              document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+          if (oldonload) {
+            oldonload()
+          }
+        };
+      }());
+    </script>
   </body>
 
 </html>
